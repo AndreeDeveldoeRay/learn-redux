@@ -2,7 +2,16 @@
 // @Date:   2017-02-20T13:54:23+01:00
 // @Email:  me@andreeray.se
 // @Filename: app.scss
-// @Last modified by:   andreeray
-// @Last modified time: 2017-02-27T03:45:42+01:00
+// @Last modified by:   DevelDoe
+// @Last modified time: 2017-03-03T22:09:17+01:00
 
 @import 'base/variables';
+
+html, body {
+    background: $black;
+    color: $white;
+    font-size: $size; // setting baseline at 10px
+}
+body {
+    font-size: 1.6rem; // = 16px (base at 10)
+}
