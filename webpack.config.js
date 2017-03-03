@@ -3,8 +3,8 @@
 * @Date:   2017-02-20T13:54:23+01:00
 * @Email:  me@andreeray.se
 * @Filename: webpack.config.js
-* @Last modified by:   andreeray
-* @Last modified time: 2017-02-27T03:48:17+01:00
+* @Last modified by:   DevelDoe
+* @Last modified time: 2017-03-03T20:49:56+01:00
 */
 
 
@@ -13,18 +13,7 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: [
-        'script!jquery/dist/jquery.min.js',
-        'script!foundation-sites/dist/js/foundation.min.js',
         './app/entry.jsx'
-    ],
-    externals: {
-        jquery: 'jQuery'
-    },
-    plugins: [
-        new webpack.ProvidePlugin({
-            '$': 'jquery',
-            'jQuery': 'jquery'
-        })
     ],
     output: {
         path: __dirname,
@@ -37,7 +26,7 @@ module.exports = {
             './app/components'
         ],
         alias: {
-            styles              : 'app/styles/app.scss'
+            styles : 'app/styles/app.scss'
         },
         extensions: ['','.js','.jsx']
     },
