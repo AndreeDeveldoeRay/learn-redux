@@ -3,12 +3,12 @@
 @Date:   2017-02-20T13:54:23+01:00
 @Email:  me@andreeray.se
 @Filename: readme.md
-@Last modified by:   andreeray
-@Last modified time: 2017-02-26T15:22:25+01:00
+@Last modified by:   DevelDoe
+@Last modified time: 2017-03-03T20:53:52+01:00
 -->
 
 
 
-# React Boilerplate
+# Learn Redux
 
-Bootstrapping react app development.
+Project for learning redux
