@@ -10,6 +10,7 @@
   "author": "Andree DevelDoe Ray <me@andreeray.se> (http://andreeray.se)",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.14.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
