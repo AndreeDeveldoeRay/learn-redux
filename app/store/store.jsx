@@ -3,14 +3,14 @@
 * @Date:   2017-03-05T16:09:53+01:00
 * @Email:  me@andreeray.se
 * @Filename: configStore.jsx
-* @Last modified by:   DevelDoe
-* @Last modified time: 2017-03-05T16:37:36+01:00
+* @Last modified by:   andreeray
+* @Last modified time: 2017-03-06T22:45:01+01:00
 */
 
 
-var redux = require('redux'), thunk = require('redux-thunk').default, {nameReducer, hobbiesReducer, moviesReducer, mapReducer} = require('./../reducers/index.jsx')
+var redux = require('redux'), thunk = require('redux-thunk').default, {nameReducer, hobbiesReducer, moviesReducer, mapReducer} = require('reducers')
 
-export var config = () => {
+export var store = () => {
     var reducer = redux.combineReducers(
     {
         name: nameReducer,
@@ -23,6 +23,5 @@ export var config = () => {
         redux.applyMiddleware(thunk),
         window.devToolsExtension ? window.devToolsExtension() : f => f
     ))
-
     return store
 }

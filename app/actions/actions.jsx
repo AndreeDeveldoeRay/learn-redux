@@ -3,8 +3,8 @@
 * @Date:   2017-03-05T16:09:24+01:00
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
-* @Last modified by:   DevelDoe
-* @Last modified time: 2017-03-05T16:39:21+01:00
+* @Last modified by:   andreeray
+* @Last modified time: 2017-03-06T22:18:09+01:00
 */
 
 var axios = require('axios')
