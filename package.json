@@ -1,7 +1,7 @@
 {
-  "name": "react-component-redux",
-  "version": "1.0.0",
-  "description": "A redux component",
+  "name": "react-project-redux",
+  "version": "1.0.1",
+  "description": "This Project contains a basic redux integration.",
   "main": "entry.jsx",
   "scripts": {
     "test": "karma start",
