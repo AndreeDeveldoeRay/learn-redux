@@ -4,11 +4,11 @@
 @Email:  me@andreeray.se
 @Filename: readme.md
 @Last modified by:   develdoe
-@Last modified time: 2017-03-06T22:57:01+01:00
+@Last modified time: 2017-03-06T22:59:12+01:00
 -->
 
 
 
-# React Project Redux
+# React Implementing Redux
 
-This Project contains a basic redux integration.
+This Project contains basic redux integration.
