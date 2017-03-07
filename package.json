@@ -1,6 +1,6 @@
 {
   "name": "react-project-redux",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This Project contains a basic redux integration.",
   "main": "entry.jsx",
   "scripts": {
@@ -22,6 +22,7 @@
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.22.0",
+    "deep-freeze-strict": "^1.1.1",
     "expect": "^1.14.0",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.2",
