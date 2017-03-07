@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: redux.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-06T22:55:03+01:00
+* @Last modified time: 2017-03-07T02:02:54+01:00
 */
 
 
@@ -18,12 +18,7 @@ var unsubscribe = store.subscribe(() =>
     else if (state.map.url) document.getElementById('app').innerHTML = "<a target=_blank href='" + state.map.url + "'>View your location</a>"
 })
 
-store.dispatch(actions.fetchLocation())
 store.dispatch(actions.changeName('ray'))
-store.dispatch(actions.changeName('Ilona'))
-store.dispatch(actions.addHobbie('Electronics'))
-store.dispatch(actions.addHobbie('Development'))
-store.dispatch(actions.removeHobbie(1))
 store.dispatch(actions.addMovie('Star Wars','Sci-Fi'))
-store.dispatch(actions.addMovie('Mad Max','Action'))
 store.dispatch(actions.removeMovie(1))
+store.dispatch(actions.fetchLocation())

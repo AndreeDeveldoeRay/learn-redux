@@ -1,6 +1,6 @@
 {
   "name": "react-project-redux",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "This Project contains a basic redux integration.",
   "main": "entry.jsx",
   "scripts": {

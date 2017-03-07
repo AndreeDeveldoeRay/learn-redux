@@ -3,8 +3,8 @@
 * @Date:   2017-03-05T16:09:36+01:00
 * @Email:  me@andreeray.se
 * @Filename: index.jsx
-* @Last modified by:   DevelDoe
-* @Last modified time: 2017-03-05T16:39:27+01:00
+* @Last modified by:   develdoe
+* @Last modified time: 2017-03-07T02:10:53+01:00
 */
 
 
@@ -15,25 +15,6 @@ export var nameReducer = (state = 'Anonymous', action) =>
     {
         case 'CHANGE_NAME':
             return action.name
-        default:
-            return state
-    }
-}
-var nextHobbyId = 0
-export var hobbiesReducer = (state = [], action) =>
-{
-    switch (action.type)
-    {
-        case 'ADD_HOBBY':
-            return [
-                ...state,
-                {
-                    id: nextHobbyId++,
-                    hobby: action.hobby
-                }
-            ]
-        case 'REMOVE_HOBBY':
-            return state.filter((hobby) =>  hobby.id !== action.id)
         default:
             return state
     }
