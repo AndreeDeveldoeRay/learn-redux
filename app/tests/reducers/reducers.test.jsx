@@ -4,7 +4,7 @@
 * @Email:  me@andreeray.se
 * @Filename: reducers.test.jsx
 * @Last modified by:   develdoe
-* @Last modified time: 2017-03-07T04:27:06+01:00
+* @Last modified time: 2017-03-08T04:21:14+01:00
 */
 
 var Expect = require('expect'), Reducers = require('reducers'), DeepFreeze = require('deep-freeze-strict')
@@ -29,6 +29,7 @@ describe('Redux Reducers', () => {
                 genre: 'test'
             }
             var res = Reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
+            Expect(res.length).toEqual(1)
             Expect(res[0].id).toEqual(action.id)
             Expect(res[0].title).toEqual(action.title)
             Expect(res[0].genre).toEqual(action.genre)
@@ -41,11 +42,13 @@ describe('Redux Reducers', () => {
                 genre: 'test'
             }
             var res = Reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
+            Expect(res.length).toEqual(1)
             var action = {
                 type: 'REMOVE_MOVIE',
                 id: 0
             }
             var res = Reducers.moviesReducer(DeepFreeze([]),DeepFreeze(action))
+            Expect(res.length).toEqual(0)
             Expect(res[0]).toNotExist()
         })
     })
