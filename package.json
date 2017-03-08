@@ -1,11 +1,11 @@
 {
-  "name": "react-project-redux",
-  "version": "1.2.0",
-  "description": "This Project contains a basic redux integration.",
+  "name": "react-implement-redux",
+  "version": "1.3.0",
+  "description": "Contains a redux implementation.",
   "main": "entry.jsx",
   "scripts": {
     "test": "karma start",
-    "start": "node server.js"
+    "start": "supervisor server.js"
   },
   "author": "Andree DevelDoe Ray <me@andreeray.se> (http://andreeray.se)",
   "license": "ISC",
@@ -32,6 +32,7 @@
     "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.6",
+    "react-redux": "^5.0.3",
     "redux": "^3.3.1",
     "redux-thunk": "^2.0.1",
     "webpack": "^1.12.13"
